@@ -12,7 +12,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   line-height: 1.25;
   cursor:
-    url("files/cursor.png") 32 32,
+    url("files/cursor1.png") 32 32,
     auto;
 }
 
@@ -21,11 +21,19 @@ body {
   overflow-x: scroll;
   display: flex;
   flex-direction: row;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 .poem {
   min-width: 100vw;
   padding: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .poem-text {
@@ -40,13 +48,140 @@ body {
 }
 
 h1 {
-  font-size: clamp(20px, 4vw, 40px);
+  font-size: clamp(32px, 4vw, 40px);
   margin-bottom: 10px;
 }
 
 pre {
   font-family: "Times New Roman", Times, serif;
   line-height: 1.25;
-  font-size: clamp(12px, 4vw, 18px);
+  font-size: clamp(12px, 2vw, 18px);
   margin-left: 50px;
+}
+
+.interactive-text {
+  background-color: transparent;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  color: #071eea;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: clamp(12px, 2vw, 18px);
+  transition-duration: 0.5s;
+  cursor:
+    url("files/cursor2.png") 32 32,
+    auto;
+}
+
+.interactive-content {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+}
+
+.interactive-content.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.interactive-content img,
+video {
+  border: #071eea 2px solid;
+}
+
+.interactive-content .text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+.highlight {
+  color: #071eea;
+}
+
+#jinzhi-content {
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#jinzhi-1 {
+  position: relative;
+  top: 20px;
+  left: 50px;
+  width: clamp(150px, 30vw, 250px);
+}
+
+#jinzhi-2 {
+  position: relative;
+  top: -15px;
+  width: clamp(120px, 25vw, 180px);
+}
+
+#jia-content {
+  position: relative;
+  top: clamp(160px, 40vw, 330px);
+  left: -40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#jia-1 {
+  position: relative;
+  width: clamp(120px, 25vw, 220px);
+}
+
+#mary-content {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+#puerto-reyes-content {
+  position: relative;
+  top: 40px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#puerto-reyes-1 {
+  position: relative;
+  top: 20px;
+  width: clamp(150px, 30vw, 300px);
+}
+
+#puerto-reyes-2 {
+  position: relative;
+  top: clamp(-300px, -20vw, -100px);
+  left: clamp(100px, 20vw, 240px);
+  width: clamp(140px, 25vw, 300px);
+}
+
+#iguazu-content {
+  position: relative;
+  min-width: clamp(120px, 40vw, 400px);
+  top: clamp(300px, 40vw, 500px);
+  right: clamp(0px, 30vw, 300px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(12px, 2vw, 18px);
+  color: #8a8a8a;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
