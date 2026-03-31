@@ -69,8 +69,23 @@ document.getElementById("jia").addEventListener("click", function () {
   section.classList.toggle("visible");
 });
 
-document.getElementById("mary").addEventListener("click", function () {
-  const section = document.getElementById("mary-content");
+document.getElementById("beach").addEventListener("click", function () {
+  const section = document.getElementById("beach-content");
+  section.classList.toggle("visible");
+});
+
+document.getElementById("blue-waves").addEventListener("click", function () {
+  const section = document.getElementById("blue-waves-content");
+  section.classList.toggle("visible");
+});
+
+document.getElementById("sea").addEventListener("click", function () {
+  const section = document.getElementById("sea-content");
+  section.classList.toggle("visible");
+});
+
+document.getElementById("momentum").addEventListener("click", function () {
+  const section = document.getElementById("momentum-content");
   section.classList.toggle("visible");
 });
 
@@ -81,5 +96,10 @@ document.getElementById("puerto-reyes").addEventListener("click", function () {
 
 document.getElementById("iguazu").addEventListener("click", function () {
   const section = document.getElementById("iguazu-content");
+  section.classList.toggle("visible");
+});
+
+document.getElementById("point-blank").addEventListener("click", function () {
+  const section = document.getElementById("point-blank-content");
   section.classList.toggle("visible");
 });

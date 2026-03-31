@@ -29,7 +29,7 @@ body {
 }
 
 .poem {
-  min-width: 100vw;
+  min-width: 120vw;
   padding: 40px;
   display: flex;
   flex-direction: row;
@@ -55,6 +55,7 @@ h1 {
 pre {
   font-family: "Times New Roman", Times, serif;
   line-height: 1.25;
+  min-width: 240px;
   font-size: clamp(12px, 2vw, 18px);
   margin-left: 50px;
 }
@@ -135,10 +136,50 @@ video {
   width: clamp(120px, 25vw, 220px);
 }
 
-#mary-content {
+#beach-content {
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#beach-1 {
+  position: relative;
+  width: clamp(140px, 20vw, 240px);
+}
+
+#blue-waves-content {
+  position: relative;
+  top: 100px;
+  left: -40px;
+}
+
+#blue-waves-1 {
+  width: clamp(140px, 20vw, 240px);
+}
+
+#sea-content {
+  position: relative;
+  min-width: 80px;
+  top: clamp(200px, 40vw, 460px);
+  right: clamp(320px, 30vw, 800px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#momentum-content {
+  position: relative;
+  top: 200px;
+  left: 20px;
+  max-width: 600px;
+}
+
+#momentum-1 {
   position: relative;
   top: 20px;
-  left: 20px;
+  width: clamp(240px, 30vw, 600px);
 }
 
 #puerto-reyes-content {
@@ -159,18 +200,25 @@ video {
 #puerto-reyes-2 {
   position: relative;
   top: clamp(-300px, -20vw, -100px);
-  left: clamp(100px, 20vw, 240px);
+  left: clamp(120px, 20vw, 240px);
   width: clamp(140px, 25vw, 300px);
 }
 
 #iguazu-content {
   position: relative;
   min-width: clamp(120px, 40vw, 400px);
+  max-width: clamp(240px, 60vw, 800px);
   top: clamp(300px, 40vw, 500px);
-  right: clamp(0px, 30vw, 300px);
+  right: clamp(0px, 30vw, 320px);
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+#point-blank-content {
+  position: relative;
+  top: 300px;
+  max-width: 300px;
 }
 
 footer {
