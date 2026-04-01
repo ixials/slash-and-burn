@@ -131,6 +131,10 @@ video {
   gap: 20px;
 }
 
+#jia-text {
+  background-color: #ffffff;
+}
+
 #jia-1 {
   position: relative;
   width: clamp(120px, 25vw, 220px);
@@ -208,7 +212,7 @@ video {
   position: relative;
   min-width: clamp(120px, 40vw, 400px);
   max-width: clamp(240px, 60vw, 800px);
-  top: clamp(300px, 40vw, 500px);
+  top: clamp(350px, 40vw, 500px);
   right: clamp(0px, 30vw, 320px);
   display: flex;
   flex-direction: column;
@@ -232,4 +236,10 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .poem {
+    min-width: 140vw;
+  }
 }
