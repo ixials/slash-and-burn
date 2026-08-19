@@ -399,11 +399,11 @@ pre.justify {
 }
 
 .nav-arrow--left {
-  left: 24px;
+  left: 28px;
 }
 
 .nav-arrow--right {
-  right: 24px;
+  right: 28px;
 }
 
 footer {
@@ -413,7 +413,7 @@ footer {
   transform: translateX(-50%);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: clamp(11px, 1.4vw, 16px);
-  color: white;
+  color: #e0e0e0;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -456,8 +456,8 @@ footer {
 
   .popup {
     position: absolute;
-    max-width: min(45vw, 270px);
-    width: auto;
+    width: min(48vw, 240px);
+    max-width: none;
   }
 
   .popup[data-pos="top-left"] {
@@ -504,7 +504,7 @@ footer {
   }
 
   .popup--tall {
-    max-width: min(42vw, 240px);
+    max-width: min(48vw, 240px);
   }
 
   .nav-arrow {
