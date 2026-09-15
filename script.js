@@ -154,10 +154,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // start background music on first interaction
+  // Start background music on first interaction
   const startMusic = () => {
     if (music) music.play().catch(() => {});
     document.removeEventListener("click", startMusic);
   };
   document.addEventListener("click", startMusic);
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.querySelector(".page-loader").classList.add("hidden");
+    }, 100);
+  });
 });
